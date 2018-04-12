@@ -1,0 +1,27 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  var firstName = $('#firstName').text();
+  var lastName = $('#lastName').text();
+  var intials = $('#firstName').text().charAt(0) + $('#lastName').text().charAt(0);
+  var profileImage = $('#profileImage').text(intials);
+});
+</script>
+<style type="text/css">
+#profileImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #512DA8;
+  font-size: 35px;
+  color: #fff;
+  text-align: center;
+  line-height: 150px;
+  margin: 20px 0;
+}
+</style>
+
+
+<span id="firstName">Kalpesh</span>
+<span id="lastName">Singh</span>
+<div id="profileImage"></div>
